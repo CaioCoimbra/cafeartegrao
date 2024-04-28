@@ -1,2 +1,2 @@
 # cafeartegrao
- Site da de um empresa de café.
+ Site de uma empresa de café.
