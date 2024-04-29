@@ -53,6 +53,11 @@ hr{
 
 a{
     text-decoration: none;
+    color: rgb(155, 121, 50);
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 img{
