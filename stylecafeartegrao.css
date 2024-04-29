@@ -9,7 +9,7 @@ body {
 }
 
 header{
-    height: 127px;
+    height: 130px;
     width: auto;
     background-color: #D98A29;
     box-shadow: 1px 1px 1px 1px black;
@@ -75,7 +75,7 @@ img{
     height: 100px;
     width: auto;
     border-radius: 10px;
-    margin: 10px;
+    margin-top: 15px;
 }
 
 #logo{
