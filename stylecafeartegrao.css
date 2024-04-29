@@ -4,14 +4,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     text-align: center;
-    background-color: #BF8563;
+    background-image: url(madeira.jpeg);
     margin: 0px;
 }
 
 header{
     height: 130px;
     width: auto;
-    background-color: #D98A29;
+    background-image: linear-gradient(#D98A29, #d98a29b9);
     box-shadow: 1px 1px 1px 1px black;
 }
 
@@ -110,12 +110,12 @@ img{
 footer{
     text-align: end; 
     font-size: small;
-    background-color: rgb(82, 35, 19);
+    background-image: linear-gradient(rgba(82, 35, 19, 0.664), rgb(82, 35, 19));
     height: 60px;
 }
 
 #assinatura{
-    background-color: rgb(82, 35, 19);
+    background-color: transparent;
     color: rgba(255, 255, 255, 0.432);
     padding-right: 15px;
 }
