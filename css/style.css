@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --color1: rgb(82, 35, 19);
+    --color2: rgb(231, 180, 73);
+    --color3: linear-gradient(#D98A29, #d98a29b9);
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(247 247 248); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(201, 201, 201); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px; 
+    height: 8px;
+}
+
+*::selection{
+    color: white;
+    background-color: var(--color2);
+}
+
+body{
+    font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(235, 235, 235);
+    margin: 0;
+    min-height: 100vh;
+    touch-action: manipulation !important;
+
+}
+
+button:hover{
+    filter: brightness(0.8);
+    transition: 0.2s;
+}
+
+main{
+    padding: 12.5vh 5%;
+    display: flex;
+    justify-content: space-between;
+}

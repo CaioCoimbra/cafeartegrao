@@ -1,0 +1,167 @@
+<div>
+    <h1>Café Arte Grão</h1>
+    <div id="cafes-conteiner">
+        <div class="cafes-block">
+            <img src="img/cafemoido.png" alt="" class="cafes-img">
+            <h3>Moído</h3>
+            <h4>R$ 35,00</h4>
+            <button id="btnAbrir-1" onclick="abrirRanger(1)" class="btnAbrir">Quero esse!</button>
+
+            <div class="btn-range" id="range1">
+                <button class="btn-qnt" id="btn1Menos" onclick="diminuirNum(1)">-</button>
+                <span id="numRange1">0</span>
+                <button class="btn-qnt" id="btn1Mais" onclick="aumentarNum(1)">+</button>
+            </div>
+        </div>
+        <div class="cafes-block">
+            <img src="img/cafegraos.png" alt="" class="cafes-img">
+            <h3>Grãos</h3>
+            <h4>R$ 35,00</h4>
+            <button id="btnAbrir-2" class="btnAbrir" onclick="abrirRanger(2)">Quero esse!</button>
+
+            <div class="btn-range" id="range2">
+                <button class="btn-qnt" id="btn2Menos" onclick="diminuirNum(2)">-</button>
+                <span id="numRange2">0</span>
+                <button class="btn-qnt" id="btn1Mais" onclick="aumentarNum(2)">+</button>
+            </div>
+        </div>
+    </div>
+    <div id="pagamento">
+        <h4>Total = <span id="total">R$ 0,00</span></h4>
+        <div id="pedir">
+            <button onclick="wppLink()" id="btnPedir">Pedir</button>
+            <span id="carrinhoVazio"></span>
+        </div>
+    </div>
+</div>
+
+CSS 
+
+
+/*
+.btn-range{ /*NÃO ESTÁ EM USO(?)*//*
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    padding: 0 0 !important;
+    background-color: white !important;
+    color: black !important;
+    font-weight: 700 !important;
+    height: 39px !important;
+    min-width: 65% !important;
+    margin-bottom: 20px !important;
+    justify-content: space-between !important;
+    border: 1px black solid !important;
+    align-items: center !important;
+
+}
+*/
+
+/*
+.btn-qnt{ /*NÃO ESTÁ EM USO(?)*//*
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    background-color: #ffffff00 !important;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 30%) !important;
+    cursor: pointer !important;
+    font-weight: 700 !important;
+    font-size: larger !important;
+    height: 100% !important;
+    width: 20% !important;
+    border: 0 !important;
+    border-left: 1px !important;
+    border-right: 1px !important;
+    color: black !important;
+    padding: 0 !important; 
+}
+*/
+
+/*
+#btnPedir{ /*NÃO ESTÁ EM USO(?)*//*
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0 0;
+    background-color: white;
+    color: var(--color1);
+    font-weight: 700;
+    height: 39px;
+    margin-bottom: 5px;
+    justify-content: space-between;
+    border: 1px black solid;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+}*/
+
+/*
+#pagamento{ /*NÃO ESTÁ EM USO(?)*//*
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#carrinhoVazio{
+    color: red;
+}*/
+
+/*
+#pedir{ /*NÃO ESTÁ EM USO(?)*//*
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}*/
+
+
+.btnAbrir{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    padding: 10px 15px !important;
+    background-color: white !important;
+    color: var(--color1) !important;
+    cursor: pointer !important;
+    font-weight: 700 !important;
+    width: 65% !important;
+    margin-bottom: 20px !important;
+    border: 1px black solid !important;
+    height: 41px !important; 
+}
+
+#range1{
+    display: none;
+}
+
+#range2{
+    display: none;
+}
+ 
+#cafes-conteiner{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cafes-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cafes-block > img{
+    height: 40vh;
+}
+
+@media (max-width: 768px) {
+    .btn-range{
+        width: 80% !important;
+    }
+    
+    #pagamento {
+        width: 95%;
+    }
+
+    .btnAbrir {
+        padding: 10px 5px !important;
+        width: 80% !important;
+    }
+    
+    .cafes-block > img {
+        height: 25vh;
+    }
+}

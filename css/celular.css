@@ -1,0 +1,104 @@
+@media (max-width: 768px) {
+    /*MAIN*/
+    
+    main {
+        flex-direction: column;
+        padding: 11vh 2%;
+    }
+
+    /*HEADER*/
+
+    header{
+        justify-content: center;
+    }
+    
+    #hdr-left{
+        display: none;
+    }
+
+    #hdr-right{
+        display: none;
+    }
+
+    .hdr-img{
+        margin: 0;
+    }
+
+    /*ASIDE*/
+
+    aside {
+        width: 100%;
+    }
+
+    /*SECTION*/
+
+    section {
+        width: 100%;
+        margin: 2% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    section > div {
+        width: 96%;
+        padding: 0 2%;
+    }
+
+    /*PRODUTOS*/
+    /*UL PRODUTOS*/
+
+    /*LI PRODUTOS*/
+
+    .lst-item {
+        height: 18vh;
+    }    
+
+    .lst-item> img {
+        min-width: 40%;
+    }
+
+    .lst-txt{
+        height: 40%;
+    }
+
+    .lst-txt> p{
+        display: none;
+    }
+
+    #setaPreco{
+        display: none;
+    }
+
+    .precoItem {
+        display: block;
+    }
+
+    /*BUTOES*/
+
+    .div-btn-item{
+        margin: 0 0 5%;
+    }
+
+    .div-btn-item> button{
+        padding: 3% !important;
+        margin-right: 5% !important;
+    }
+
+    /*CONTADOR*/
+
+    .range-item{
+        margin-right: 5% !important;
+    }
+
+    .range-interface{
+        width: 65%;
+    }
+
+    /*DIV ITEMS*/
+
+    #divItems> ul{
+        font-size: x-large;
+    }
+}

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Café Arte Grão</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/aside.css"> 
+    <link rel="stylesheet" href="css/section.css">
+    <link rel="stylesheet" href="css/produtos.css">
+    <link rel="stylesheet" href="css/modalCarrinho.css">
+    <link rel="stylesheet" href="css/celular.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="hdr-img">
+            <img src="img/logos/logocafeartegrao100px.png" alt="" id="hdr-left">
+        </div>
+
+        <img src="img/logos/cafeartegraoescirto-1311px-pqn.png" alt="" id="hdr-logo" class="hdr-img">
+
+        <img src="img/logos/xicara-100px.png" alt="" class="hdr-img" id="hdr-right">
+
+    </header>
+
+    <main>
+
+
+        <aside>
+            <div id="asd-txt">
+                <h2>Sobre nós</h2>
+                <p>O bom café é uma arte!
+                    <br> <br>
+                    Do plantio à colheita, da seleção dos melhores grãos à torra e moagem, cada etapa da produção
+                    imprime no grão sua marca, identidade e tom, que se expressam no seu aroma e sabor, tornando-o
+                    único, especial.
+                    <br> <br>
+                    Assim é o Café Arte Grão, um café especial acima de 84 pontos, com torra e moagem frescos, que
+                    proporciona a quem vai degustá-lo as performances de vários artistas, unidas num produto elaborado e
+                    de primeira qualidade.
+                </p>
+                <h2>Contato</h2>
+                <ul id="cnt-ul">
+                    <li class="cnt-li"><a href="https://www.instagram.com/cafeartegrao/" target="_blank">
+                            <img src="img/socials/instagram.svg" alt="">
+                            <h6>@cafeartegrao</h6>
+                        </a>
+                    </li>
+                    <li class="cnt-li"><a href="https://wa.me/559838777054" target="_blank">
+                            <img src="img/socials/whatsapp.svg" alt="">
+                            <h6>Whatsapp</h6>
+                        </a>
+                    </li>
+                    <li class="cnt-li"><a href="">
+                            <img src="img/socials/phone.svg" alt="" target="_blank">
+                            <h6>+55 (98) 3877-7054</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <section>
+
+            <div class="hx-entre">
+                <h1>Nossos Produtos</h1>
+            </div>
+            <div id="produtos">
+                <div>
+                    <ul id="lst-produtos">
+                        <li class="lst-item"><img src="img/produtos/cafemoido.png" alt="" class="cafeImg">
+                            <div>
+                                <div class="lst-txt">
+                                    <h4>Café Moído <span id="setaPreco">-</span> <span class="precoItem"
+                                            id="precoItem5">R$ 35,00</span></h4>
+                                    <p>Café de corpo aveludado, sabor marcante e acidez moderada.
+                                        Torra média e notas de chocolate, frutas maduras e mel.
+                                        Para tornar a hora do café um momento especial!</p>
+                                </div>
+                                <div class="div-btn-item">
+                                    <button class="btn-item" id="item-range5" onclick="abrirRangerItems(5)"><img
+                                            src="img/icons/plus.svg" alt="" class="img-btn-item"></button>
+                                    <div class="range-item" id="range-item5">
+                                        <div class="range-interface">
+                                            <button class="range-btn" onclick="diminuirNumItems(5)"><img
+                                                    src="img/icons/lessorange.svg" alt="" class="img-btn-item"></button>
+                                            <span id="numRangeItem5">0</span>
+                                            <button class="range-btn" onclick="aumentarNumItems(5)"><img
+                                                    src="img/icons/plussorange.svg" alt=""></img></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lst-item"><img src="img/produtos/cafegraos.png" alt="" class="cafeImg">
+                            <div>
+                                <div class="lst-txt">
+                                    <h4>Café em Grãos <span id="setaPreco">-</span> <span class="precoItem"
+                                            id="precoItem6">R$ 35,00</span></h4>
+                                    <p>Café de corpo aveludado, sabor marcante e acidez moderada em grãos.
+                                        Torra média e notas de chocolate, frutas maduras e mel.
+                                        Para tornar a hora do café um momento especial!</p>
+                                </div>
+                                <div class="div-btn-item">
+                                    <button class="btn-item" id="item-range6" onclick="abrirRangerItems(6)"><img
+                                            src="img/icons/plus.svg" alt="" class="img-btn-item"></button>
+                                    <div class="range-item" id="range-item6">
+                                        <div class="range-interface">
+                                            <button class="range-btn" onclick="diminuirNumItems(6)"><img
+                                                    src="img/icons/lessorange.svg" alt="" class="img-btn-item"></button>
+                                            <span id="numRangeItem6">0</span>
+                                            <button class="range-btn" onclick="aumentarNumItems(6)"><img
+                                                    src="img/icons/plussorange.svg" alt=""
+                                                    class="img-btn-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lst-item"><img src="img/produtos/pressca/balanca.png" alt="">
+                            <div>
+                                <div class="lst-txt">
+                                    <h4>Balança Dose Certa <span id="setaPreco">-</span> <span class="precoItem"
+                                            id="precoItem1">R$ 25,00</span></h4>
+                                    <p>A Balança Dose Certa Pressca é uma colher dosadora manual, pequena, em que você
+                                        pode medir de maneira fácil e prática a dose de café perfeita, mantendo a
+                                        precisão das suas receitas, com muita comodidade</p>
+                                </div>
+                                <div class="div-btn-item">
+                                    <button class="btn-item" id="item-range1" onclick="abrirRangerItems(1)"><img
+                                            src="img/icons/plus.svg" alt="" class="img-btn-item"></button>
+                                    <div class="range-item" id="range-item1">
+                                        <div class="range-interface">
+                                            <button class="range-btn" onclick="diminuirNumItems(1)"><img
+                                                    src="img/icons/lessorange.svg" alt="" class="img-btn-item"></button>
+                                            <span id="numRangeItem1">0</span>
+                                            <button class="range-btn" onclick="aumentarNumItems(1)"><img
+                                                    src="img/icons/plussorange.svg" alt=""
+                                                    class="img-btn-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lst-item"><img src="img/produtos/pressca/espumador.png" alt="">
+                            <div>
+                                <div class="lst-txt">
+                                    <h4>Espumador de Leite Pressca <span id="setaPreco">-</span> <span class="precoItem"
+                                            id="precoItem2">R$ 65,00</span></h4>
+                                    <p>O Espumador de Leite Pressca traz inúmeras possibilidades para o seu dia a dia
+                                        ficar mais saboroso. Com ele, é possível preparar deliciosas receitas como
+                                        Lattes, Cappucinos, Mochas, Macchiatos, shakes e achocolatados de uma maneira
+                                        rápida e fácil. </p>
+                                </div>
+                                <div class="div-btn-item">
+                                    <button class="btn-item" id="item-range2" onclick="abrirRangerItems(2)"><img
+                                            src="img/icons/plus.svg" alt="" class="img-btn-item"></button>
+                                    <div class="range-item" id="range-item2">
+                                        <div class="range-interface">
+                                            <button class="range-btn" onclick="diminuirNumItems(2)"><img
+                                                    src="img/icons/lessorange.svg" alt="" class="img-btn-item"></button>
+                                            <span id="numRangeItem2">0</span>
+                                            <button class="range-btn" onclick="aumentarNumItems(2)"><img
+                                                    src="img/icons/plussorange.svg" alt=""
+                                                    class="img-btn-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lst-item"><img src="img/produtos/pressca/cafeteira.png" alt="">
+                            <div>
+                                <div class="lst-txt">
+                                    <h4>Cafeteira Pressca <span id="setaPreco">-</span> <span class="precoItem"
+                                            id="precoItem3">R$ 135,00</span></h4>
+                                    <p>Com a Cafeteira Pressca, você saboreia um café incrível em qualquer lugar, sem
+                                        filtros de papel e energia elétrica. Seu sistema exclusivo de infusão e extração
+                                        proporciona um café delicioso de forma simples e rápida. Basta adicionar água
+                                        quente e esperar poucos minutos.</p>
+                                </div>
+                                <div class="div-btn-item">
+                                    <button class="btn-item" id="item-range3" onclick="abrirRangerItems(3)"><img
+                                            src="img/icons/plus.svg" alt="" class="img-btn-item"></button>
+                                    <div class="range-item" id="range-item3">
+                                        <div class="range-interface">
+                                            <button class="range-btn" onclick="diminuirNumItems(3)"><img
+                                                    src="img/icons/lessorange.svg" alt="" class="img-btn-item"></button>
+                                            <span id="numRangeItem3">0</span>
+                                            <button class="range-btn" onclick="aumentarNumItems(3)"><img
+                                                    src="img/icons/plussorange.svg" alt=""
+                                                    class="img-btn-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="lst-item"><img src="img/produtos/pressca/coador.png" alt="">
+                            <div>
+                                <div class="lst-txt">
+                                    <h4>Coador individual Arte Grão <span id="setaPreco">-</span> <span
+                                            class="precoItem" id="precoItem4">R$ 50,00</span></h4>
+                                    <p>Para quem não abre mão do bom filtro de pano, este coador é perfeito!
+                                        Café com gostinho de saudade e memórias afetivas!</p>
+                                </div>
+                                <div class="div-btn-item">
+                                    <button class="btn-item" id="item-range4" onclick="abrirRangerItems(4)"><img
+                                            src="img/icons/plus.svg" alt="" class="img-btn-item"></button>
+                                    <div class="range-item" id="range-item4">
+                                        <div class="range-interface">
+                                            <button class="range-btn" onclick="diminuirNumItems(4)"><img
+                                                    src="img/icons/lessorange.svg" alt="" class="img-btn-item"></button>
+                                            <span id="numRangeItem4">0</span>
+                                            <button class="range-btn" onclick="aumentarNumItems(4)"><img
+                                                    src="img/icons/plussorange.svg" alt=""
+                                                    class="img-btn-item"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div id="divCompras">
+                    <div id="divItems">
+                        <ul>
+                            <li id="shopRange5"><span id="qntItem5"><strong>0</strong></span> Café Moído <span
+                                    class="precoCarrinho">R$ 35,00</span></li>
+                            <li id="shopRange6"><span id="qntItem6"><strong>0</strong></span> Café em Grãos <span
+                                    class="precoCarrinho">R$ 35,00</span></li>
+                            <li id="shopRange1"><span id="qntItem1"><strong>0</strong></span> Balança Dose Certa <span
+                                    class="precoCarrinho">R$ 25,00</span></li>
+                            <li id="shopRange2"><span id="qntItem2"><strong>0</strong></span> Espumador de Leite Pressca
+                                <span class="precoCarrinho">R$ 65,00</span></li>
+                            <li id="shopRange3"><span id="qntItem3"><strong>0</strong></span> Cafeteira Pressca <span
+                                    class="precoCarrinho">R$ 135,00</span></li>
+                            <li id="shopRange4"><span id="qntItem4"><strong>0</strong></span> Coador individual Arte
+                                Grão <span class="precoCarrinho">R$ 50,00</span></li>
+                        </ul>
+                        <h4>Total = <span id="totalItems">R$ 0,00</span></h4>
+                        <hr>
+                        <button id="btn-comprar" onclick="wppLink()">Comprar</button>
+                        <div id="carrinhoVazio"></div>
+                    </div>
+                    <div id="divCarrinho" onclick="mostrarCarrinho()"><span id="qntCarrinho">0</span><img
+                            src="img/icons/carrinho.svg" alt="" id="carrinhoImg"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="js/funcoes.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+function abrirRanger(id) {
+    btnAbrir = document.getElementById('btnAbrir-'+ id)
+    range = document.getElementById('range' + id)
+    numRange = document.getElementById('numRange' + id)
+
+    btnAbrir.style.display = 'none'
+    range.style.display = 'flex'
+    num = parseInt(numRange.textContent)
+    num = 1
+    numRange.textContent = num;
+
+    atualizarTotal()
+}
+
+function diminuirNum(id) {
+    numHtml = document.getElementById('numRange' + id)
+    btnAbrir = document.getElementById('btnAbrir-' + id)
+    range = document.getElementById('range' + id)
+    num = parseInt(numHtml.textContent)
+    num--
+    numHtml.textContent = num;
+    if (num == 0) {
+        btnAbrir.style.display = 'block'
+        range.style.display = 'none'
+        num = parseInt(numHtml.textContent)
+        num = 0
+        numHtml.textContent = num;
+    }
+
+    atualizarTotal()
+    btnPedir()
+}
+
+function aumentarNum(id) {
+    numHtml = document.getElementById('numRange' + id)
+    num = parseInt(numHtml.textContent)
+    num++
+    numHtml.textContent = num;
+
+    atualizarTotal()
+}
+
+function atualizarTotal() {
+    numMoido = parseInt(document.getElementById('numRange1').textContent);
+    numGraos = parseInt(document.getElementById('numRange2').textContent);
+
+    total = (numMoido * 35) + (numGraos * 35);
+    totalHtml = document.getElementById('total');
+    totalHtml.textContent = `R$ ${total.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+
+    btnPedir()
+}

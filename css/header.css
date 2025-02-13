@@ -1,0 +1,23 @@
+/*HEADER*/
+
+header{
+    display: flex;
+    background-color: white;
+    height: 10vh;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 30%);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+.hdr-img{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 2%;
+}
+
+#hdr-left{
+    height: 83%;
+}

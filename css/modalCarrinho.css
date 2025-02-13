@@ -1,0 +1,118 @@
+/*DIVCOMPRAS*/
+
+#divCompras{
+    position: fixed;
+    left: 4%;
+    min-height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 0;
+    bottom: 3vh;
+}
+
+/*DIVCARRINHO*/
+
+#divCarrinho{ 
+    position: relative;
+    background-color: white;
+    border-radius: 100px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    width: fit-content;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
+}
+
+#qntCarrinho{
+    font-size: xx-large;
+    padding-right: 2vh;
+    font-weight: 500;
+}
+
+#carrinhoImg{
+    width: 5vh;
+}
+
+/*DIV ITEMS*/
+
+#divItems{
+    min-width: 40vh;
+    max-height: 70vh;
+    background-color: white;
+    border-radius: 9px;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1%;
+    margin: 2vh 0;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 30%);
+    opacity: 0;
+    transition: 0.25s;
+    overflow-y: scroll;
+}
+
+#divItems> h4{
+    margin: 0 0 5%;
+}
+
+#divItems> hr{
+    width: 90%;
+}
+
+/*LISTA DE ITEMS*/
+
+#divItems> ul{
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    width: 75%;
+}
+
+#divItems> ul> li{
+    list-style: none;
+    display: none;
+}
+
+.precoCarrinho {
+    display: block;
+    color: black;
+    font-weight: bold;
+}
+
+/*BUTAO DE COMPRA*/
+
+#btn-comprar{
+    font-family: 'Quicksand', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: var(--color2);
+    padding: 4% 15%;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: x-large;
+    margin: 5% 0;
+}
+
+/*SEM USO*/
+
+/*
+#divItems::after {
+    content: '';
+    position: absolute;
+    bottom: 14%; /* Ajusta a posição para aparecer abaixo da div *//*
+    left: 20%; /* Centraliza horizontalmente *//*
+    transform: translateX(-50%); /* Ajusta a centralização exata *//*
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid white;
+}
+*/

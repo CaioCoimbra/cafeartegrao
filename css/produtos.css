@@ -1,0 +1,141 @@
+/*TITULO*/
+
+.hx-entre{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    align-content: center;
+    margin-top: 2vh;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*PRODUTOS*/
+
+#produtos{
+    box-shadow: none;
+    background: none;
+    width: 100%;
+    padding: 0;
+}
+
+/*UL PRODUTOS*/
+
+#lst-produtos{
+    display: flex;
+    padding: 0;
+    list-style: none;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+/*LI PRODUTOS*/
+
+.lst-item{
+    display: flex;
+    height: 30vh;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 30%);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.lst-item> img{
+    min-width: 25%;
+    max-width: 25%;
+    background-color: lightblue;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.lst-item> div{
+    margin: 0 0 0 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.lst-txt{
+    height: 75%;
+}
+
+.lst-txt> h4{
+    margin: 5px 0 0 0;
+    font-size: larger;
+}
+
+.lst-txt> p{
+    margin: 10px 0 0 0;
+}
+
+.precoItem{
+    color: var(--color2);
+}
+
+.cafeImg{
+    object-fit: contain !important;
+}
+
+/*BUTOES*/
+
+.div-btn-item{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    align-items: flex-end;
+    margin: 0 0 2%;
+}
+
+.btn-item {
+    cursor: pointer !important;
+    border: none !important;
+    background-color: var(--color2) !important;
+    color: white !important;
+    margin: 0 2% 0 0 !important;
+    border-radius: 5px !important;
+    padding: 1% !important;
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.img-btn-item{
+    height: 24px;
+    width: 24px;
+}
+
+/*CONTADOR*/
+
+.range-item{ 
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 2% !important;
+    opacity: 0;
+    transition: 0.25s;
+}
+
+.range-interface{
+    display: flex;
+    align-items: center;
+    width: 28%;
+    justify-content: space-between;
+    font-size: x-large;
+}
+
+.range-btn{
+    height: 37px;
+    width: 37px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: x-large;
+    color: var(--color2);
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}

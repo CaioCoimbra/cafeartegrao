@@ -1,0 +1,35 @@
+/*SECTION*/
+
+section{
+    width: 71%;    
+}
+
+section > div{
+    width: 90%;
+    padding: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 30%);
+    background-color: white;
+    border-radius: 10px;
+    
+}
+
+h1{
+    color: var(--color1);
+    font-size: xx-large;
+
+}
+
+h3{
+    font-size: x-large;
+    margin: 0;
+}
+
+h4{
+    font-size: x-large;
+    font-weight: 700;
+}
